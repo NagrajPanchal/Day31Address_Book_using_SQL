@@ -17,8 +17,11 @@ primary key(first_name)
 
 /* Insert contact details into address book*/
 insert into address_book(first_name,last_name,address,city,state,zip,phone_number,email)
-values("Nagraj","Panchal","Shivanagar","Bidar","Karnataka",585326,9739713842,"nagraj.panchal@gmail.com");
+values("Ambadas","Panchal","Shivanagar","Bidar","Karnataka",585326,9552207741,"ambadash.panchal@gmail.com");
 
 /*Update*/
 update address_book set address = "Shiva nagar Colony" 
 where first_name = "Nagraj";
+
+/* Delete */
+delete from address_book where first_name = "Ambadas";
