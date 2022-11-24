@@ -25,3 +25,7 @@ where first_name = "Nagraj";
 
 /* Delete */
 delete from address_book where first_name = "Ambadas";
+
+/*Retrive data state or city*/
+select * from address_book 
+where state = "Karnataka" and city = "Bidar";
