@@ -54,3 +54,10 @@ values("Anita","Panchal","Shivanagar","Bidar","Karnataka",585326,9552207741,"ani
 insert into address_book(first_name,last_name,address,city,state,zip,phone_number,email,Type)
 values("Jyoti","Panchal","Shivanagar","Bidar","Karnataka",585326,9739713842,"jyoti.panchal@gmail.com","Family");
 
+/* Retrive data queries using new table as self join*/
+Select a1.first_name,a2.Type 
+from address_book as a1,address_book as a2
+where a1.first_name = a1.first_name
+order by a1.first_name;
+ 
+
