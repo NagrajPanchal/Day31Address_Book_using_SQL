@@ -33,3 +33,8 @@ where state = "Karnataka" and city = "Bidar";
 /*Size of address state or city using count*/
 Select count(state), state,count(city),city from address_book
 where state = "Karnataka" and city = "Bidar";
+
+/*Sort order by*/
+Select first_name from address_book
+where city = "Bidar"
+order by first_name;
