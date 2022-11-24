@@ -53,3 +53,4 @@ insert into address_book(first_name,last_name,address,city,state,zip,phone_numbe
 values("Anita","Panchal","Shivanagar","Bidar","Karnataka",585326,9552207741,"anita.panchal@gmail.com","Friends");
 insert into address_book(first_name,last_name,address,city,state,zip,phone_number,email,Type)
 values("Jyoti","Panchal","Shivanagar","Bidar","Karnataka",585326,9739713842,"jyoti.panchal@gmail.com","Family");
+
