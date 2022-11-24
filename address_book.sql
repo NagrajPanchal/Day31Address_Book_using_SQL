@@ -14,10 +14,11 @@ phone_number long not null,
 email varchar(50),
 primary key(first_name)
 );
+Select * from address_book;
 
 /* Insert contact details into address book*/
-insert into address_book(first_name,last_name,address,city,state,zip,phone_number,email)
-values("Ambadas","Panchal","Shivanagar","Bidar","Karnataka",585326,9552207741,"ambadash.panchal@gmail.com");
+insert into address_book(first_name,last_name,address,city,state,zip,phone_number,email,Type)
+values("Anita","Panchal","Shivanagar","Bidar","Karnataka",585326,9552207741,"anita.panchal@gmail.com","Friends");
 
 /*Update*/
 update address_book set address = "Shiva nagar Colony" 
@@ -38,3 +39,7 @@ where state = "Karnataka" and city = "Bidar";
 Select first_name from address_book
 where city = "Bidar"
 order by first_name;
+
+/* identify each Address Book with name and Type */
+alter table address_book add Type varchar(20) after email;
+update address_book set Type = "Profession" where first_name = "Ambadas";
