@@ -43,3 +43,7 @@ order by first_name;
 /* identify each Address Book with name and Type */
 alter table address_book add Type varchar(20) after email;
 update address_book set Type = "Profession" where first_name = "Ambadas";
+
+/* Count by type */
+Select count(Type),phone_number from address_book
+where Type = "Family";
