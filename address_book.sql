@@ -29,3 +29,7 @@ delete from address_book where first_name = "Ambadas";
 /*Retrive data state or city*/
 select * from address_book 
 where state = "Karnataka" and city = "Bidar";
+
+/*Size of address state or city using count*/
+Select count(state), state,count(city),city from address_book
+where state = "Karnataka" and city = "Bidar";
