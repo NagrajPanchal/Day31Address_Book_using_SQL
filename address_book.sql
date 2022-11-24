@@ -47,3 +47,9 @@ update address_book set Type = "Profession" where first_name = "Ambadas";
 /* Count by type */
 Select count(Type),phone_number from address_book
 where Type = "Family";
+
+/*Add person family and friends*/
+insert into address_book(first_name,last_name,address,city,state,zip,phone_number,email,Type)
+values("Anita","Panchal","Shivanagar","Bidar","Karnataka",585326,9552207741,"anita.panchal@gmail.com","Friends");
+insert into address_book(first_name,last_name,address,city,state,zip,phone_number,email,Type)
+values("Jyoti","Panchal","Shivanagar","Bidar","Karnataka",585326,9739713842,"jyoti.panchal@gmail.com","Family");
